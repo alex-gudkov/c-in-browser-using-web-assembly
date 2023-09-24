@@ -1,5 +1,9 @@
 function runWasm() {
-  const result = Module.ccall('sum', 'number', ['number', 'number'], [1, 2]);
+  const a = 1;
+  const b = 2;
+
+  // trigger `sum` function from exported WebAssembly module
+  const result = Module.ccall('sum', 'number', ['number', 'number'], [a, b]);
 
   console.log(result);
 }
