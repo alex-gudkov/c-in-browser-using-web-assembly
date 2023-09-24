@@ -1,12 +1,13 @@
-// wrap `sum` function from exported WebAssembly module
-const sum = Module.cwrap('sum', 'number', ['number', 'number']);
+/**
+ * @type {(a: number, b: number) => number}
+ */
+const sumIntNums = Module.cwrap('sum_int_nums', 'number', ['number', 'number']);
 
 function runWasm() {
   const a = 1;
   const b = 2;
 
-  // trigger `sum` function
-  const result = sum(a, b);
+  const result = sumIntNums(a, b);
 
   console.log(result);
 }

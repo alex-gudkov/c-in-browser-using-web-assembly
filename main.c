@@ -2,7 +2,7 @@
 #include <emscripten.h>
 
 EMSCRIPTEN_KEEPALIVE
-int sum(int a, int b)
+int sum_int_nums(int a, int b)
 {
     return a + b;
 }
