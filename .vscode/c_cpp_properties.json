@@ -1,0 +1,13 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${default}",
+                "/usr/include/linux",
+                "/usr/share/emscripten/system/include"
+            ]
+        }
+    ],
+    "version": 4
+}
