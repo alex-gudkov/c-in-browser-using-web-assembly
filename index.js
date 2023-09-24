@@ -1,3 +1,9 @@
+/**
+ * Contains all the functions exported from the WebAssembly module instance.
+ * @type {{
+ *  sumIntNums: (a: number, b: number) => number
+ * }}
+ */
 const exports = {};
 
 async function loadWasm() {
@@ -5,6 +11,10 @@ async function loadWasm() {
   const webAssemblyObject = await WebAssembly.instantiateStreaming(source);
 
   exports.sumIntNums = webAssemblyObject.instance.exports['sum_int_nums'];
+
+  if (!exports.sumIntNums) {
+    throw new Error('"sumIntNums" export not found');
+  }
 }
 
 loadWasm();
