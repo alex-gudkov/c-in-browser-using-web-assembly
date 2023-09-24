@@ -1,5 +1,5 @@
 function runWasm() {
-  const result = Module.ccall('main', 'number', [], []);
+  const result = Module.ccall('sum', 'number', ['number', 'number'], [1, 2]);
 
   console.log(result);
 }

@@ -1947,7 +1947,7 @@ var asm = createWasm();
 var ___wasm_call_ctors = Module["___wasm_call_ctors"] = createExportWrapper("__wasm_call_ctors");
 
 /** @type {function(...*):?} */
-var ___original_main = Module["___original_main"] = createExportWrapper("__original_main");
+var _sum = Module["_sum"] = createExportWrapper("sum");
 
 /** @type {function(...*):?} */
 var _main = Module["_main"] = createExportWrapper("main");
