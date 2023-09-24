@@ -13,5 +13,5 @@ emcc ./main.c -o ./main.js -s NO_EXIT_RUNTIME=1 -s EXPORTED_RUNTIME_METHODS=ccal
 ```
 
 ```sh
-emcc ./main.c -o ./main.js && rm ./main.js
+emcc ./src/main.c -o ./out/main.js && rm ./out/main.js
 ```
