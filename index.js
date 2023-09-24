@@ -6,7 +6,6 @@ const sumIntNums = Module.cwrap('sum_int_nums', 'number', ['number', 'number']);
 function runWasm() {
   const a = 1;
   const b = 2;
-
   const result = sumIntNums(a, b);
 
   console.log(result);
