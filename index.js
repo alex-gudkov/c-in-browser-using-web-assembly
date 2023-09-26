@@ -28,7 +28,7 @@ load();
 
 function run() {
   const a = 20;
-  const b = 6;
+  const b = -6;
   const result = exports.divIntNums(a, b);
 
   console.log(result);

@@ -1,1 +1,1 @@
-# Run C in browser with WebAssembly
+# C in browser using WebAssembly
